@@ -1,0 +1,118 @@
+//content card
+.splash{
+  text-align: center;
+  .jobrole{
+    font-size: 1.7rem;
+    line-height: 3rem;
+  }
+}
+
+//fixed sidebar
+aside{
+  @media (#{$bp-larger-than-mobile}){width:100%;position:relative;}
+  @media (#{$bp-larger-than-tablet}){width:30%;position:fixed;}
+  @media (#{$bp-larger-than-desktop}){width:25%;}
+  @media (#{$bp-larger-than-desktophd}){width:25%;}
+
+  height: 100%;
+  top: 0;
+  left: 0;
+  box-sizing:border-box;
+  padding: 3rem;
+}
+.profile-pic{
+  @include border-radius(50%);
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  max-width: 180px;
+  height: auto;
+  border:1px solid $black;
+}
+.content{
+  @media (#{$bp-larger-than-mobile}){width:100%;margin:0;}
+  @media (#{$bp-larger-than-tablet}){width:70%;margin:0 30%;}
+  @media (#{$bp-larger-than-desktop}){width:75%;margin:0 25%; @include horizontal-align();}
+  @media (#{$bp-larger-than-desktophd}){width:75%;margin:0 25%;}
+  max-width: 660px;
+  margin: 0 auto;
+  padding: 3rem 0 11.3rem 0;
+  box-sizing:border-box;
+}
+
+
+
+.socials{
+  @media (#{$bp-larger-than-mobile}){position:relative; left:0;  bottom:1rem;}
+  @media (#{$bp-larger-than-tablet}){margin-left:0;position:absolute;left:10rem;}
+  
+  bottom:4rem;
+  margin: 0;
+  li{
+    display: inline-block;
+    width:25px;
+    margin: 3rem 0.8rem;
+    img{
+      width:100%;
+      opacity: 1;
+      &:hover ,a:hover{
+        opacity: 0.7;
+        border-bottom:none;
+      }
+    }
+  }
+}
+
+.breakdown {
+  padding:0;
+  padding-right:10%;
+  width: 42.5%;
+  display: inline-block;
+  vertical-align: top;
+  margin-left:0;
+  li{
+    position:relative;
+    margin: 2.5rem 0rem;
+    list-style: none inside;
+    text-transform: capitalize;
+    letter-spacing: 0.16px;
+  }
+  &--second{
+    padding:0;
+  }
+}
+
+.graph{
+  position:absolute;
+  right:0;
+  padding:0;
+  top: 2px;
+}
+
+.dot{
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 1px solid $black;
+  margin: 0 0.3rem;
+  @include border-radius(50%); 
+  &--fill{
+    background:$black;
+  }
+}
+
+hr{
+  border: 0;
+  height: 1px;
+  margin: 3.5rem 0;
+  background: $black;
+}
+/* Clearing
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Self Clearing Goodness */
+.container:after,
+.row:after,
+.u-cf {
+  content: "";
+  display: table;
+  clear: both; }
