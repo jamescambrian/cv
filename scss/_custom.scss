@@ -10,9 +10,8 @@
 //fixed sidebar
 aside{
   @media (#{$bp-larger-than-mobile}){width:100%;position:relative;}
-  @media (#{$bp-larger-than-tablet}){width:30%;position:fixed;}
+  @media (#{$bp-larger-than-tablet}){width:33.333%;position:fixed;}
   @media (#{$bp-larger-than-desktop}){width:25%;}
-  @media (#{$bp-larger-than-desktophd}){width:25%;}
 
   height: 100%;
   top: 0;
@@ -30,20 +29,19 @@ aside{
 }
 .content{
   @media (#{$bp-larger-than-mobile}){width:100%;margin:0;}
-  @media (#{$bp-larger-than-tablet}){width:70%;margin:0 30%;}
-  @media (#{$bp-larger-than-desktop}){width:75%;margin:0 25%; @include horizontal-align();}
-  @media (#{$bp-larger-than-desktophd}){width:75%;margin:0 25%;}
+  @media (#{$bp-larger-than-tablet}){width:55%;margin:0 35%;}
+  @media (#{$bp-larger-than-desktop}){width:75%;margin:0 25%;@include horizontal-align()}
   max-width: 660px;
   margin: 0 auto;
-  padding: 3rem 0 11.3rem 0;
+  padding: 3rem;
   box-sizing:border-box;
 }
 
 
 
 .socials{
-  @media (#{$bp-larger-than-mobile}){position:relative; left:0;  bottom:1rem;}
-  @media (#{$bp-larger-than-tablet}){margin-left:0;position:absolute;left:10rem;}
+  @media (#{$bp-larger-than-mobile}){position:relative; left:0;  bottom:0rem;}
+  @media (#{$bp-larger-than-desktop}){margin-left:0;position:absolute;left:10rem;}
   
   bottom:4rem;
   margin: 0;
@@ -54,18 +52,23 @@ aside{
     img{
       width:100%;
       opacity: 1;
-      &:hover ,a:hover{
+      &:hover{
         opacity: 0.7;
-        border-bottom:none;
+       
       }
     }
+          a:hover{
+         border-bottom:none;
+      }
   }
 }
 
 .breakdown {
+  @media (#{$bp-larger-than-mobile}){ width: 100%;}
+  @media (#{$bp-larger-than-tablet}){ width: 60%;}
+  @media (#{$bp-larger-than-desktop}){ width: 42.5%;}
   padding:0;
   padding-right:10%;
-  width: 42.5%;
   display: inline-block;
   vertical-align: top;
   margin-left:0;
@@ -106,6 +109,19 @@ hr{
   margin: 3.5rem 0;
   background: $black;
 }
+
+
+hr.mobileUp{
+@media (#{$bp-larger-than-mobile}) {display:block;}
+@media (#{$bp-larger-than-tablet}) {display:none;}
+
+}
+
+hr.tabletUp{
+@media (#{$bp-larger-than-mobile}) {display:none;}
+@media (#{$bp-larger-than-tablet}) {display:block;}
+}
+
 /* Clearing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
