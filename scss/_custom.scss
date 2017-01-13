@@ -12,7 +12,7 @@ aside{
   @media (#{$bp-larger-than-mobile}){width:100%;position:relative;}
   @media (#{$bp-larger-than-tablet}){width:33.333%;position:fixed;}
   @media (#{$bp-larger-than-desktop}){width:25%;}
-
+ background-color: $yellow;
   height: 100%;
   top: 0;
   left: 0;
@@ -23,9 +23,9 @@ aside{
   @include border-radius(50%);
   margin: 0 auto;
   margin-bottom: 4rem;
-  max-width: 180px;
+  max-width: 220px;
   height: auto;
-  border:1px solid $black;
+
 }
 .content{
   @media (#{$bp-larger-than-mobile}){width:100%;margin:0;}
@@ -95,11 +95,11 @@ aside{
   display: inline-block;
   width: 15px;
   height: 15px;
-  border: 1px solid $black;
+  border: 1px solid $yellow;
   margin: 0 0.3rem;
   @include border-radius(50%); 
   &--fill{
-    background:$black;
+    background:$yellow;
   }
 }
 
