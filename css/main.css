@@ -303,6 +303,20 @@ li {
   list-style-position: outside;
   margin-bottom: 1rem; }
 
+.button--side {
+  background: #231f20;
+  padding: .8rem;
+  color: #fff;
+  border: 2px solid #231f20;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  display: inline;
+  line-height: 6rem; }
+  .button--side:hover {
+    color: #231f20;
+    background: 0 0;
+    cursor: pointer; }
+
 button,
 .button {
   width: 100%; }
@@ -345,6 +359,7 @@ form {
     line-height: 3rem; }
 
 aside {
+  overflow: scroll;
   background-color: #fcd116;
   height: 100%;
   top: 0;

@@ -12,6 +12,7 @@ aside{
   @media (#{$bp-larger-than-mobile}){width:100%;position:relative;}
   @media (#{$bp-larger-than-tablet}){width:33.333%;position:fixed;}
   @media (#{$bp-larger-than-desktop}){width:25%;}
+ overflow: scroll;
  background-color: $yellow;
   height: 100%;
   top: 0;

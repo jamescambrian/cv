@@ -90,3 +90,19 @@ li{
   list-style-position:outside;
   margin-bottom: 1rem;
 }
+
+.button--side{
+    background: #231f20;
+    padding: .8rem;
+    color: #fff;
+    border: 2px solid #231f20;
+    @include fade(0.5s);
+    display: inline;
+    line-height: 6rem;
+        
+    &:hover{
+            color: #231f20;
+            background: 0 0;
+        cursor: pointer;
+    }
+}
